@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+}
+
+/* Defining color variable */
+:root{
+    --primaryBlack : #2D2D2B;
+    --secondaryPink : #C39E9E;
+    --secondaryBeige : #F0E4D8;
+}
+
+/*Styles for the header section*/
+
+.headerNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 2rem;
+    font-size: 25px;
+}
+
+nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+nav p{
+    margin-right: 2.2rem;
+    font-family: "Cantarell", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.name{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 200px;
+}
+
+.job{
+    font-family: 'Cantarell', sans-serif;
+    font-size: 50px;
+}
+
+.nameContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
