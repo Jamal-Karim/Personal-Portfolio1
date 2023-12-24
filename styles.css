@@ -31,16 +31,22 @@
 
 /*Styles for the header section*/
 
+body{
+  background-color: var(--primaryBlack);
+}
+
 .headerNav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1.2rem;
 }
 
 .logo{
     font-family: 'Fjalla One', sans-serif;
     margin-left: 2rem;
     font-size: 25px;
+    color: var(--secondaryBeige);
 }
 
 nav{
@@ -54,20 +60,59 @@ nav p{
     font-family: "Cantarell", sans-serif;
     font-size: 25px;
     font-weight: bold;
+    color: var(--secondaryBeige);
 }
 
 .name{
     font-family: 'Fjalla One', sans-serif;
     font-size: 200px;
+    font-weight: 100;
+    color: var(--secondaryBeige);
 }
 
 .job{
     font-family: 'Cantarell', sans-serif;
     font-size: 50px;
+    letter-spacing: 0.15em;
+    color: var(--secondaryBeige);
+}
+
+.rectangle {
+  position: absolute;
+  width: 622px;
+  height: 9px;
+  left: 0px;
+  top: 100%;
+  background: var(--secondaryBeige);
 }
 
 .nameContainer{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  margin-top: 15rem;
+}
+
+/* CSS for the svg vectors */
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 0;
+  width: 100%;
+  height: 1011.97px;
+  z-index: -1;
+  background-image: url('background.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.headerNav, .nameContainer {
+  position: relative;
+  z-index: 1;
 }
