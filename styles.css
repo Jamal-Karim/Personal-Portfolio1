@@ -102,9 +102,9 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: -25%;
-  left: 0;
-  width: 100%;
+  top: -5%;
+  left: 15%;
+  width: 1263.11px;
   height: 1011.97px;
   z-index: -1;
   background-image: url('background.svg');
@@ -114,5 +114,131 @@ body::before {
 
 .headerNav, .nameContainer {
   position: relative;
+  z-index: 1;
+}
+
+/* Projects Section */
+
+.projectTitle{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  color: var(--secondaryBeige);
+}
+
+.rectangle2{
+width: 1272px;
+height: 9px;
+left: 116px;
+top: 361px;
+background: #F0E4D8;
+}
+
+.projectName{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  color: var(--secondaryPink);
+}
+
+.projectText{
+  font-family: 'Cantarell', sans-serif;
+  font-size: 35px;
+  color: var(--secondaryBeige);
+}
+
+.projectBtn{
+  background-color: var(--secondaryPink);
+  border-radius: 15px;
+  border: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+  color: var(--primaryBlack);
+  width: 150px;
+  height: 50px;
+}
+
+.pink1{
+box-sizing: border-box;
+width: 743px;
+height: 505px;
+left: 633px;
+top: 549px;
+background: #C39E9E;
+border: 1px solid #000000;
+}
+
+.pic1{
+width: 743px;
+height: 505px;
+left: 668px;
+top: 591px;
+background: #F0E4D8;
+}
+
+.pic2{
+width: 743px;
+height: 505px;
+left: 668px;
+top: 591px;
+background: #F0E4D8;
+}
+
+.pic3{
+width: 743px;
+height: 505px;
+left: 668px;
+top: 591px;
+background: #F0E4D8;
+}
+
+.pic4{
+width: 743px;
+height: 505px;
+left: 668px;
+top: 591px;
+background: #F0E4D8;
+}
+
+/* positioning of project section */
+
+.projContainer1{
+  display: flex;
+  flex-direction: column;
+}
+.picContainer1{
+  position: relative;
+}
+.pic1{
+  top: 5%;
+  left: 2%;
+  position: absolute;
+  z-index: 1;
+}
+.picContainer2{
+  position: relative;
+}
+.pic2{
+  top: 5%;
+  left: 2%;
+  position: absolute;
+  z-index: 1;
+}
+.picContainer3{
+  position: relative;
+}
+.pic3{
+  top: 5%;
+  left: 2%;
+  position: absolute;
+  z-index: 1;
+}
+.picContainer4{
+  position: relative;
+}
+.pic4{
+  top: 5%;
+  left: 2%;
+  position: absolute;
   z-index: 1;
 }
