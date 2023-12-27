@@ -1,80 +1,102 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
 }
 
 /* Defining color variable */
-:root{
-    --primaryBlack : #2D2D2B;
-    --secondaryPink : #C39E9E;
-    --secondaryBeige : #F0E4D8;
+:root {
+  --primaryBlack: #2D2D2B;
+  --secondaryPink: #C39E9E;
+  --secondaryBeige: #F0E4D8;
 }
 
 /*Styles for the header section*/
 
-body{
+body {
   background-color: var(--primaryBlack);
 }
 
-.headerNav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1.2rem;
+.headerNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.2rem;
 }
 
-.logo{
-    font-family: 'Fjalla One', sans-serif;
-    margin-left: 2rem;
-    font-size: 25px;
-    color: var(--secondaryBeige);
+.logo {
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: 2rem;
+  font-size: 25px;
+  color: var(--secondaryBeige);
 }
 
-nav{
-    display: flex;
-    margin-left: auto;
-    margin-right: 2rem;
+nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2rem;
 }
 
-nav p{
-    margin-right: 2.2rem;
-    font-family: "Cantarell", sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--secondaryBeige);
+nav p {
+  margin-right: 2.2rem;
+  font-family: "Cantarell", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secondaryBeige);
 }
 
-.name{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 200px;
-    font-weight: 100;
-    color: var(--secondaryBeige);
+.name {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 200px;
+  font-weight: 100;
+  color: var(--secondaryBeige);
 }
 
-.job{
-    font-family: 'Cantarell', sans-serif;
-    font-size: 50px;
-    letter-spacing: 0.15em;
-    color: var(--secondaryBeige);
+.job {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.15em;
+  color: var(--secondaryBeige);
 }
 
 .rectangle {
@@ -86,7 +108,7 @@ nav p{
   background: var(--secondaryBeige);
 }
 
-.nameContainer{
+.nameContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -113,14 +135,15 @@ body::before {
   background-position: center;
 }
 
-.headerNav, .nameContainer {
+.headerNav,
+.nameContainer {
   position: relative;
   z-index: 1;
 }
 
 /* Projects Section */
 
-.projectTitle{
+.projectTitle {
   font-family: 'Fjalla One', sans-serif;
   font-size: 100px;
   font-weight: 100;
@@ -128,29 +151,29 @@ body::before {
   margin-left: 6rem;
 }
 
-.rectangle2{
-width: 1272px;
-height: 9px;
-left: 116px;
-top: 361px;
-background: #F0E4D8;
-margin-left: 6rem;
+.rectangle2 {
+  width: 1272px;
+  height: 9px;
+  left: 116px;
+  top: 361px;
+  background: #F0E4D8;
+  margin-left: 6rem;
 }
 
-.projectName{
+.projectName {
   font-family: 'Fjalla One', sans-serif;
   font-size: 50px;
   font-weight: 100;
   color: var(--secondaryPink);
 }
 
-.projectText{
+.projectText {
   font-family: 'Cantarell', sans-serif;
   font-size: 35px;
   color: var(--secondaryBeige);
 }
 
-.projectBtn{
+.projectBtn {
   background-color: var(--secondaryPink);
   border-radius: 15px;
   border: none;
@@ -161,73 +184,77 @@ margin-left: 6rem;
   height: 50px;
 }
 
-.pink1{
-box-sizing: border-box;
-width: 743px;
-height: 505px;
-left: 633px;
-top: 549px;
-background: #C39E9E;
-border: 1px solid #000000;
+.pink1 {
+  box-sizing: border-box;
+  width: 743px;
+  height: 505px;
+  left: 633px;
+  top: 549px;
+  background: #C39E9E;
+  border: 1px solid #000000;
 }
 
-.pic1{
-width: 743px;
-height: 505px;
-left: 668px;
-top: 591px;
-background: #F0E4D8;
+.pic1 {
+  width: 743px;
+  height: 505px;
+  left: 668px;
+  top: 591px;
+  background: #F0E4D8;
 }
 
-.pic2{
-width: 743px;
-height: 505px;
-left: 668px;
-top: 591px;
-background: #F0E4D8;
+.pic2 {
+  width: 743px;
+  height: 505px;
+  left: 668px;
+  top: 591px;
+  background: #F0E4D8;
 }
 
-.pic3{
-width: 743px;
-height: 505px;
-left: 668px;
-top: 591px;
-background: #F0E4D8;
+.pic3 {
+  width: 743px;
+  height: 505px;
+  left: 668px;
+  top: 591px;
+  background: #F0E4D8;
 }
 
-.pic4{
-width: 743px;
-height: 505px;
-left: 668px;
-top: 591px;
-background: #F0E4D8;
+.pic4 {
+  width: 743px;
+  height: 505px;
+  left: 668px;
+  top: 591px;
+  background: #F0E4D8;
 }
 
 /* positioning of project section */
 
-.projContainer1{
+.projContainer1 {
   display: flex;
   flex-direction: column;
 }
-.pic1{
+
+.pic1 {
   top: 5%;
   left: 2%;
   position: absolute;
   z-index: 1;
 }
-.pic2{
+
+.pic2 {
   top: 5%;
   left: 2%;
   position: absolute;
   z-index: 1;
 }
-.pic3{
+
+.pic3 {
   top: 5%;
   left: 2%;
   position: absolute;
   z-index: 1;
 }
-.pic4{
+
+.pic4 {
   top: 5%;
   left: 2%;
   position: absolute;
@@ -235,116 +262,173 @@ background: #F0E4D8;
 }
 
 
-.projectGrid{
+.projectGrid {
   display: grid;
   grid-template-columns: 40vw 800px;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-  "proj1 pic1"
-  "proj2 pic2"
-  "proj3 pic3"
-  "proj4 pic4";
+    "proj1 pic1"
+    "proj2 pic2"
+    "proj3 pic3"
+    "proj4 pic4";
 }
 
-.projContainer1{
+.projContainer1 {
   grid-area: proj1;
   padding: 1.5rem;
   margin-top: 0.8rem;
   margin-left: 4rem;
 }
-.projContainer1 h2{
+
+.projContainer1 h2 {
   margin-bottom: 3rem;
 }
-.projContainer1 p{
+
+.projContainer1 p {
   margin-bottom: 3rem;
   line-height: 1.8;
 }
-.picContainer1{
+
+.picContainer1 {
   position: relative;
   grid-area: pic1;
   margin-top: 1.1rem;
   padding: 4rem;
 }
 
-.projContainer2{
+.projContainer2 {
   grid-area: proj2;
   padding: 1.5rem;
   margin-top: 0.8rem;
   margin-left: 4rem;
 }
-.projContainer2 h2{
+
+.projContainer2 h2 {
   margin-bottom: 3rem;
 }
-.projContainer2 p{
+
+.projContainer2 p {
   margin-bottom: 3rem;
   line-height: 1.8;
 }
-.picContainer2{
+
+.picContainer2 {
   position: relative;
   grid-area: pic2;
   padding: 4rem;
   margin-top: 1.2rem;
 }
 
-.projContainer3{
+.projContainer3 {
   grid-area: proj3;
   padding: 1.5rem;
   margin-top: 0.8rem;
   margin-left: 4rem;
 }
-.projContainer3 h2{
+
+.projContainer3 h2 {
   margin-bottom: 3rem;
 }
-.projContainer3 p{
+
+.projContainer3 p {
   margin-bottom: 3rem;
   line-height: 1.8;
 }
-.picContainer3{
+
+.picContainer3 {
   position: relative;
   grid-area: pic3;
   padding: 4rem;
   margin-top: 1.2rem;
 }
 
-.projContainer4{
+.projContainer4 {
   grid-area: proj4;
   padding: 1.5rem;
   margin-top: 0.8rem;
   margin-left: 4rem;
 }
-.projContainer4 h2{
+
+.projContainer4 h2 {
   margin-bottom: 3rem;
 }
-.projContainer4 p{
+
+.projContainer4 p {
   margin-bottom: 3rem;
   line-height: 1.8;
 }
-.picContainer4{
+
+.picContainer4 {
   position: relative;
   grid-area: pic4;
   padding: 4rem;
   margin-top: 1.2rem;
 }
 
-.projectBtn{
+.projectBtn {
   margin-right: 3rem;
 }
 
 /* About section */
 
-.pink2{
-width: 671px;
-height: 725px;
-left: 695px;
-top: 500px;
+.pink2 {
+  box-sizing: border-box;
+  width: 671px;
+  height: 725px;
+  left: 695px;
+  top: 500px;
+  background: #C39E9E;
+}
 
-background: #C39E9E;
+.pic5 {
+  width: 648px;
+  height: 720px;
+  left: 740px;
+  top: 542px;
+  background: var(--secondaryBeige);
+}
+
+.rectangle3 {
+  width: 1272px;
+  height: 9px;
+  left: 116px;
+  top: 361px;
+  background: #F0E4D8;
+  margin-left: 6rem;
+}
+
+.aboutTitle {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  color: var(--secondaryBeige);
+  margin-left: 6rem;
+}
+
+.aboutText{
+  font-family: 'Cantarell', sans-serif;
+  font-size: 35px;
+  color: var(--secondaryBeige);
+  margin-top: 7.2rem;
+  line-height: 1.9;
+  margin-right: 5.5rem;
+}
+
+.picContainer5{
+  position: relative;
+  padding: 4rem;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
 }
 
 .pic5{
-width: 648px;
-height: 765px;
-left: 740px;
-top: 542px;
-background: var(--secondaryBeige);
+  top: 13%;
+  left: 14%;
+  position: absolute;
+  z-index: 1;
+}
+
+.aboutinfo{
+  display: flex;
+  flex-direction: row-reverse;
 }
