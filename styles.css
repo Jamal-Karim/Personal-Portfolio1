@@ -92,6 +92,7 @@ nav p{
   flex-direction: column;
   margin-left: 6rem;
   margin-top: 15rem;
+  margin-bottom: 9rem;
 }
 
 /* CSS for the svg vectors */
@@ -124,6 +125,7 @@ body::before {
   font-size: 100px;
   font-weight: 100;
   color: var(--secondaryBeige);
+  margin-left: 6rem;
 }
 
 .rectangle2{
@@ -132,6 +134,7 @@ height: 9px;
 left: 116px;
 top: 361px;
 background: #F0E4D8;
+margin-left: 6rem;
 }
 
 .projectName{
@@ -206,17 +209,11 @@ background: #F0E4D8;
   display: flex;
   flex-direction: column;
 }
-.picContainer1{
-  position: relative;
-}
 .pic1{
   top: 5%;
   left: 2%;
   position: absolute;
   z-index: 1;
-}
-.picContainer2{
-  position: relative;
 }
 .pic2{
   top: 5%;
@@ -224,21 +221,130 @@ background: #F0E4D8;
   position: absolute;
   z-index: 1;
 }
-.picContainer3{
-  position: relative;
-}
 .pic3{
   top: 5%;
   left: 2%;
   position: absolute;
   z-index: 1;
 }
-.picContainer4{
-  position: relative;
-}
 .pic4{
   top: 5%;
   left: 2%;
   position: absolute;
   z-index: 1;
+}
+
+
+.projectGrid{
+  display: grid;
+  grid-template-columns: 40vw 800px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+  "proj1 pic1"
+  "proj2 pic2"
+  "proj3 pic3"
+  "proj4 pic4";
+}
+
+.projContainer1{
+  grid-area: proj1;
+  padding: 1.5rem;
+  margin-top: 0.8rem;
+  margin-left: 4rem;
+}
+.projContainer1 h2{
+  margin-bottom: 3rem;
+}
+.projContainer1 p{
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.picContainer1{
+  position: relative;
+  grid-area: pic1;
+  margin-top: 1.1rem;
+  padding: 4rem;
+}
+
+.projContainer2{
+  grid-area: proj2;
+  padding: 1.5rem;
+  margin-top: 0.8rem;
+  margin-left: 4rem;
+}
+.projContainer2 h2{
+  margin-bottom: 3rem;
+}
+.projContainer2 p{
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.picContainer2{
+  position: relative;
+  grid-area: pic2;
+  padding: 4rem;
+  margin-top: 1.2rem;
+}
+
+.projContainer3{
+  grid-area: proj3;
+  padding: 1.5rem;
+  margin-top: 0.8rem;
+  margin-left: 4rem;
+}
+.projContainer3 h2{
+  margin-bottom: 3rem;
+}
+.projContainer3 p{
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.picContainer3{
+  position: relative;
+  grid-area: pic3;
+  padding: 4rem;
+  margin-top: 1.2rem;
+}
+
+.projContainer4{
+  grid-area: proj4;
+  padding: 1.5rem;
+  margin-top: 0.8rem;
+  margin-left: 4rem;
+}
+.projContainer4 h2{
+  margin-bottom: 3rem;
+}
+.projContainer4 p{
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.picContainer4{
+  position: relative;
+  grid-area: pic4;
+  padding: 4rem;
+  margin-top: 1.2rem;
+}
+
+.projectBtn{
+  margin-right: 3rem;
+}
+
+/* About section */
+
+.pink2{
+width: 671px;
+height: 725px;
+left: 695px;
+top: 500px;
+
+background: #C39E9E;
+}
+
+.pic5{
+width: 648px;
+height: 765px;
+left: 740px;
+top: 542px;
+background: var(--secondaryBeige);
 }
