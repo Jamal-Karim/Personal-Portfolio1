@@ -405,7 +405,7 @@ body::before {
   margin-left: 6rem;
 }
 
-.aboutText{
+.aboutText {
   font-family: 'Cantarell', sans-serif;
   font-size: 35px;
   color: var(--secondaryBeige);
@@ -414,21 +414,83 @@ body::before {
   margin-right: 5.5rem;
 }
 
-.picContainer5{
+.picContainer5 {
   position: relative;
   padding: 4rem;
   margin-top: 1.2rem;
   margin-left: 2rem;
 }
 
-.pic5{
+.pic5 {
   top: 13%;
   left: 14%;
   position: absolute;
   z-index: 1;
 }
 
-.aboutinfo{
+.aboutinfo {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.aboutContainer {
+  margin-bottom: 5rem;
+}
+
+/* Contact Section */
+
+.rectangle4 {
+  width: 1272px;
+  height: 9px;
+  left: 116px;
+  top: 1511px;
+  background: #F0E4D8;
+  margin-left: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.cta {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 100px;
+  color: var(--secondaryBeige);
+  font-weight: 100;
+  margin-left: 6rem;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.cta span {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  color: var(--secondaryPink);
+}
+
+.finalName {
+  margin-left: 6rem;
+}
+
+.finalName p {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 35px;
+  color: var(--secondaryBeige);
+}
+
+.socials a {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 35px;
+  color: var(--secondaryBeige);
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-right: 6rem;
+}
+
+footer {
+  display: flex;
+  margin-bottom: 4rem;
 }
