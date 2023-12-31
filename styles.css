@@ -114,7 +114,7 @@ nav p {
   flex-direction: column;
   margin-left: 6rem;
   margin-top: 15rem;
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
 }
 
 /* CSS for the svg vectors */
@@ -195,11 +195,18 @@ body::before {
 }
 
 .pic1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 743px;
   height: 505px;
   left: 668px;
   top: 591px;
   background: #F0E4D8;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 150px;
+  color: var(--primaryBlack);
+  text-align: center;
 }
 
 .pic2 {
@@ -207,7 +214,10 @@ body::before {
   height: 505px;
   left: 668px;
   top: 591px;
-  background: #F0E4D8;
+  background-image: url(images/DataScience.png);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .pic3 {
@@ -215,7 +225,10 @@ body::before {
   height: 505px;
   left: 668px;
   top: 591px;
-  background: #F0E4D8;
+  background-image: url(images/Ableton.png);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .pic4 {
@@ -223,7 +236,10 @@ body::before {
   height: 505px;
   left: 668px;
   top: 591px;
-  background: #F0E4D8;
+  background-image: url(images/Lobe.png);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 /* positioning of project section */
@@ -385,7 +401,10 @@ body::before {
   height: 720px;
   left: 740px;
   top: 542px;
-  background: var(--secondaryBeige);
+  background-image: url(images/About.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .rectangle3 {
@@ -412,6 +431,10 @@ body::before {
   margin-top: 7.2rem;
   line-height: 1.9;
   margin-right: 5.5rem;
+}
+
+.aboutText a{
+  color: var(--secondaryBeige);
 }
 
 .picContainer5 {
@@ -460,7 +483,7 @@ body::before {
   margin-bottom: 3rem;
 }
 
-.cta span {
+.email {
   font-family: 'Fjalla One', sans-serif;
   font-size: 100px;
   font-weight: 100;
@@ -501,6 +524,7 @@ footer {
 .projectBtn {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .projectBtn span {
@@ -524,4 +548,8 @@ footer {
 .projectBtn:hover::before {
   width: 100%;
   border-radius: 15px;
+}
+
+.char{
+  display: inline-block;
 }
