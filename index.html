@@ -22,17 +22,17 @@
 <body>
     <header>
         <div class="headerNav">
-            <div class="logo">JK</div>
+            <div class="logo active"><a href="#home">JK</a></div>
 
             <nav>
-                <p>Projects</p>
-                <p>About</p>
-                <p>Contact</p>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="nameContainer">
+        <div class="nameContainer section" id="home">
             <h1 class="name" data-splitting>Jamal Karim.</h1>
             <h2 class="job" data-splitting>Full Stack Developer</h2>
             <div class="rectangle"></div>
@@ -40,7 +40,7 @@
 
         <!-- Project section -->
 
-        <div class="projectsContainer anim_item">
+        <div class="projectsContainer anim_item section" id="projects">
             <h1 class="projectTitle" data-splitting>Projects</h1>
             <div class="rectangle2"></div>
 
@@ -95,7 +95,7 @@
         </div>
 
         <!-- About Section -->
-        <div class="aboutContainer anim_item">
+        <div class="aboutContainer anim_item section" id="about">
             <h1 class="aboutTitle" data-splitting>About</h1>
             <div class="rectangle3"></div>
 
@@ -113,9 +113,10 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="contactContainer anim_item">
+        <div class="contactContainer anim_item section" id="contact">
             <div class="rectangle4"></div>
-            <h1 class="cta" data-splitting>Currently looking for opportunities. Contact me at <span class="email">1jamalkarim@gmail.com</span></h1>
+            <h1 class="cta" data-splitting>Currently looking for opportunities. Contact me at <span
+                    class="email">1jamalkarim@gmail.com</span></h1>
         </div>
 
     </main>
