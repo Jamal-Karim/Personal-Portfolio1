@@ -498,12 +498,6 @@ body::before {
   color: var(--secondaryBeige);
 }
 
-.socials a {
-  font-family: 'Cantarell', sans-serif;
-  font-size: 35px;
-  color: var(--secondaryBeige);
-}
-
 .socials {
   display: flex;
   flex-direction: column;
@@ -564,7 +558,7 @@ footer {
   /* background-color: var(--secondaryPink); */
 }
 
-.logo a{
+.logo a {
   font-family: 'Fjalla One', sans-serif;
   margin-left: 2rem;
   font-size: 25px;
@@ -579,6 +573,8 @@ nav {
 }
 
 nav a {
+  position: relative;
+  padding: 0 10px;
   margin-right: 2.2rem;
   font-family: "Cantarell", sans-serif;
   font-size: 25px;
@@ -587,11 +583,49 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover,
 nav a.active {
   color: var(--secondaryPink);
 }
 
 * {
   scroll-behavior: smooth;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: var(--secondaryBeige);
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.socials a {
+  position: relative;
+  padding: 0 10px;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 35px;
+  color: var(--secondaryBeige);
+  text-decoration: none;
+}
+
+.socials a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: var(--secondaryBeige);
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.socials a:hover::after {
+  width: 100%;
 }

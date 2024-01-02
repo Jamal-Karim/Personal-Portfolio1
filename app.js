@@ -36,14 +36,35 @@ gsapItem.forEach((gsIt) => {
             toggleActions: "play none none none",
             scrub: 1
         }
-    })
+    });
     tl2.from(textChar, 7, {
         opacity: 0,
         xPercent: -130,
         stagger: 0.06,
         ease: "back.out"
-    });
+    })
 });
+
+let containers = document.querySelectorAll(".anim_img");
+
+containers.forEach(container => {
+    let image = container.querySelector(".Img");
+
+    let tl3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: container,
+            toggleActions: "restart none none none"
+        }
+    });
+
+    tl3.set(container, { autoAlpha: 1, transformOrigin: "top left" });
+    tl3.from(image, {
+        scale: 0,
+        ease: "Power2.out",
+        duration: 0.5
+    });
+
+})
 
 
 //nav bar animations
