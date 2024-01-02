@@ -60,7 +60,7 @@ containers.forEach(container => {
     tl3.set(container, { autoAlpha: 1, transformOrigin: "top left" });
     tl3.from(image, {
         scale: 0,
-        ease: "Power2.out",
+        ease: "back.out",
         duration: 0.5
     });
 
@@ -111,10 +111,15 @@ contactLink.addEventListener('click', function (event) {
     event.preventDefault();
 
     let contactSection = document.getElementById('contact');
-    let offset = contactSection.offsetTop - 75;
+    let offset = contactSection.offsetTop + 125;
 
     window.scrollTo({
         top: offset,
         behavior: 'smooth'
     });
 });
+
+
+var currentYear = new Date().getFullYear();
+
+document.getElementById('currYear').innerText = 'Ⓒ ' + currentYear;

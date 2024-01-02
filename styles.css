@@ -57,33 +57,6 @@ body {
   background-color: var(--primaryBlack);
 }
 
-/* .headerNav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1.2rem;
-} */
-
-/* .logo {
-  font-family: 'Fjalla One', sans-serif;
-  margin-left: 2rem;
-  font-size: 25px;
-  color: var(--secondaryBeige);
-}
-
-nav {
-  display: flex;
-  margin-left: auto;
-  margin-right: 2rem;
-}
-
-nav p {
-  margin-right: 2.2rem;
-  font-family: "Cantarell", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: var(--secondaryBeige);
-} */
 .name {
   margin-top: 8rem;
   font-family: 'Fjalla One', sans-serif;
@@ -118,11 +91,13 @@ nav p {
 }
 
 /* CSS for the svg vectors */
-/* body {
+
+body {
   position: relative;
+  overflow-x: hidden;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: absolute;
   top: -5%;
@@ -133,11 +108,64 @@ body::before {
   background-image: url('background.svg');
   background-size: cover;
   background-position: center;
-}
+  animation: rotate 13s linear infinite;
+} */
+
 .nameContainer {
   position: relative;
   z-index: 1;
-} */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateBack {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.background1 {
+  position: absolute;
+  height: 0;
+  top: -4%;
+  right: -10%;
+  z-index: -100;
+  /* transform-origin: 509px 411.5px;
+  animation: rotateBack 15s linear infinite; */
+}
+
+.background2 {
+  position: absolute;
+  height: 0;
+  top: -5%;
+  right: -10%;
+  z-index: -100;
+  /* transform-origin: 532.5px 453.5px;
+  animation: rotate 10s linear infinite; */
+
+}
+
+.background3 {
+  position: absolute;
+  height: 0;
+  top: -9%;
+  right: -2%;
+  z-index: -100;
+  /* transform-origin: 655px 331px;
+  animation: rotate 10s linear infinite; */
+}
 
 /* Projects Section */
 
