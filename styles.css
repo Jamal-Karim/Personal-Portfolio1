@@ -582,8 +582,17 @@ footer {
   align-items: center;
   z-index: 1000;
   width: 100%;
-  margin-top: -11rem;
-  /* background-color: var(--secondaryPink); */
+  margin-top: -12rem;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.headerNav.scrolled {
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.headerNav a {
+  opacity: 100%;
 }
 
 .logo a {

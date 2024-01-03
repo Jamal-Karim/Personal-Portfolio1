@@ -69,29 +69,29 @@ containers.forEach(container => {
 
 //nav bar animations
 
-let sections = document.querySelectorAll(".section");
-let navLinks = document.querySelectorAll(".headerNav nav a");
+// let sections = document.querySelectorAll(".section");
+// let navLinks = document.querySelectorAll(".headerNav nav a");
 
-window.onscroll = () => {
-    sections.forEach(sect => {
-        let top = window.scrollY;
-        let offset = sect.offsetTop - 100;
-        let height = sect.offsetHeight;
-        let id = sect.getAttribute("id");
+// window.onscroll = () => {
+//     sections.forEach(sect => {
+//         let top = window.scrollY;
+//         let offset = sect.offsetTop - 100;
+//         let height = sect.offsetHeight;
+//         let id = sect.getAttribute("id");
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove("active");
-            })
-            let activeLink = document.querySelector('.headerNav nav a[href="#' + id + '"]');
+//         if (top >= offset && top < offset + height) {
+//             navLinks.forEach(links => {
+//                 links.classList.remove("active");
+//             })
+//             let activeLink = document.querySelector('.headerNav nav a[href="#' + id + '"]');
 
-            if (activeLink) {
-                activeLink.classList.add("active");
-            }
-            return;
-        }
-    })
-}
+//             if (activeLink) {
+//                 activeLink.classList.add("active");
+//             }
+//             return;
+//         }
+//     })
+// }
 
 
 let logo = document.querySelector('.logo a');
@@ -111,7 +111,35 @@ contactLink.addEventListener('click', function (event) {
     event.preventDefault();
 
     let contactSection = document.getElementById('contact');
-    let offset = contactSection.offsetTop + 125;
+    let offset = contactSection.offsetTop + 100;
+
+    window.scrollTo({
+        top: offset,
+        behavior: 'smooth'
+    });
+});
+
+let aboutLink = document.querySelector('.headerNav nav a[href="#about"]');
+
+aboutLink.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let aboutSection = document.getElementById('about');
+    let offset = aboutSection.offsetTop + 130;
+
+    window.scrollTo({
+        top: offset,
+        behavior: 'smooth'
+    });
+});
+
+let projLink = document.querySelector('.headerNav nav a[href="#projects"]');
+
+projLink.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let projSection = document.getElementById('projects');
+    let offset = projSection.offsetTop + 130;
 
     window.scrollTo({
         top: offset,
@@ -120,6 +148,21 @@ contactLink.addEventListener('click', function (event) {
 });
 
 
+
+
 var currentYear = new Date().getFullYear();
 
 document.getElementById('currYear').innerText = 'Ⓒ ' + currentYear;
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var headerNav = document.querySelector(".headerNav");
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 0) {
+        gsap.to(headerNav, { backgroundColor: "rgba(0, 0, 0, 0.7)", duration: 0.3 });
+      } else {
+        gsap.to(headerNav, { backgroundColor: "rgba(0, 0, 0, 0)", duration: 0.3 });
+      }
+    });
+  });
