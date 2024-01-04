@@ -148,21 +148,76 @@ projLink.addEventListener('click', function (event) {
 });
 
 
-
-
 var currentYear = new Date().getFullYear();
 
 document.getElementById('currYear').innerText = 'Ⓒ ' + currentYear;
 
 
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
     var headerNav = document.querySelector(".headerNav");
 
-    window.addEventListener("scroll", function() {
-      if (window.scrollY > 0) {
-        gsap.to(headerNav, { backgroundColor: "rgba(0, 0, 0, 0.7)", duration: 0.3 });
-      } else {
-        gsap.to(headerNav, { backgroundColor: "rgba(0, 0, 0, 0)", duration: 0.3 });
-      }
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            gsap.to(headerNav, { backgroundColor: "rgba(0, 0, 0, 0.7)", duration: 0.3 });
+        } else {
+            gsap.to(headerNav, { backgroundColor: "rgba(0, 0, 0, 0)", duration: 0.3 });
+        }
     });
-  });
+});
+
+//PROJECT 1
+//view repo button project 1
+
+function project1Redirect(){
+
+    let repoUrl = "https://github.com/Jamal-Karim/Personal-Portfolio1";
+
+    window.open(repoUrl, '_blank');
+}
+
+//PROJECT 2
+//view repo button project 2
+
+function project2Redirect(){
+
+    let repoUrl = "https://github.com/Jamal-Karim/Data_Science_ProjectFA23";
+
+    window.open(repoUrl, '_blank');
+}
+
+//PROJECT 3
+//view repo button project 3
+
+function project3Redirect(){
+
+    let repoUrl = "https://github.com/Jamal-Karim/Restaurant_Page";
+
+    window.open(repoUrl, '_blank');
+}
+//view live button project 3
+
+function project3RedirectLive(){
+
+    let liveUrl = "https://jamal-karim.github.io/Restaurant_Page/";
+
+    window.open(liveUrl, '_blank');
+}
+
+//PROJECT 4
+//view repo button project 4
+
+function project4Redirect(){
+
+    let repoUrl = "https://github.com/Jamal-Karim/Ableton-Cloned-Website";
+
+    window.open(repoUrl, '_blank');
+}
+//view live button project 4
+
+function project4RedirectLive(){
+
+    let liveUrl = "https://jamal-karim.github.io/Ableton-Cloned-Website/";
+
+    window.open(liveUrl, '_blank');
+}
