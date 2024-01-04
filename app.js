@@ -221,3 +221,29 @@ function project4RedirectLive(){
 
     window.open(liveUrl, '_blank');
 }
+
+//About link
+function balloonbros(){
+
+    let liveUrl = "https://www.instagram.com/balloonbros2/";
+
+    window.open(liveUrl, '_blank');
+}
+
+//Github link
+function githubRedirect(event){
+
+    let liveUrl = "https://github.com/Jamal-Karim";
+
+    window.open(liveUrl, '_blank');
+    return false;
+}
+
+//Linkedin link
+function linkedinRedirect(event){
+
+    let liveUrl = "https://www.linkedin.com/in/jamal-karim-a98528265/";
+
+    window.open(liveUrl, '_blank');
+    return false;
+}
