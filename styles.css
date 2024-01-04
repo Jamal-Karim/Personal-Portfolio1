@@ -1,3 +1,4 @@
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -115,6 +116,8 @@ body {
   position: relative;
   z-index: 1;
 }
+
+/* Animations for rotating svg */
 
 @keyframes rotate {
   from {
@@ -303,7 +306,7 @@ body {
   z-index: 1;
 }
 
-
+/* Grid Display for Project Section */
 .projectGrid {
   display: grid;
   grid-template-columns: 40vw 800px;
@@ -541,6 +544,7 @@ footer {
 
 /* Animations */
 
+/* Button animations */
 .projectBtn {
   position: relative;
   overflow: hidden;
@@ -570,11 +574,12 @@ footer {
   border-radius: 15px;
 }
 
+/* JS Splitting Animations */
 .char {
   display: inline-block;
 }
 
-
+/* Header Animation Styling */
 .headerNav {
   position: fixed;
   display: flex;
@@ -643,6 +648,7 @@ nav a:hover::after {
   width: 100%;
 }
 
+/* Contact Link Animations */
 .socials a {
   position: relative;
   padding: 0 10px;

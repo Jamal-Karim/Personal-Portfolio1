@@ -1,3 +1,4 @@
+//Scroll Text Reveal Logic
 Splitting();
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,6 +46,8 @@ gsapItem.forEach((gsIt) => {
     })
 });
 
+
+//Scroll image animation reveal logic
 let containers = document.querySelectorAll(".anim_img");
 
 containers.forEach(container => {
@@ -67,33 +70,33 @@ containers.forEach(container => {
 })
 
 
-//nav bar animations
+//Nav Bar Animations
 
-// let sections = document.querySelectorAll(".section");
-// let navLinks = document.querySelectorAll(".headerNav nav a");
+let sections = document.querySelectorAll(".section");
+let navLinks = document.querySelectorAll(".headerNav nav a");
 
-// window.onscroll = () => {
-//     sections.forEach(sect => {
-//         let top = window.scrollY;
-//         let offset = sect.offsetTop - 100;
-//         let height = sect.offsetHeight;
-//         let id = sect.getAttribute("id");
+window.onscroll = () => {
+    sections.forEach(sect => {
+        let top = window.scrollY;
+        let offset = sect.offsetTop - 100;
+        let height = sect.offsetHeight;
+        let id = sect.getAttribute("id");
 
-//         if (top >= offset && top < offset + height) {
-//             navLinks.forEach(links => {
-//                 links.classList.remove("active");
-//             })
-//             let activeLink = document.querySelector('.headerNav nav a[href="#' + id + '"]');
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove("active");
+            })
+            let activeLink = document.querySelector('.headerNav nav a[href="#' + id + '"]');
 
-//             if (activeLink) {
-//                 activeLink.classList.add("active");
-//             }
-//             return;
-//         }
-//     })
-// }
+            if (activeLink) {
+                activeLink.classList.add("active");
+            }
+            return;
+        }
+    })
+}
 
-
+//Nav Bar scrolling logic
 let logo = document.querySelector('.logo a');
 
 logo.addEventListener('click', function (event) {
@@ -147,13 +150,13 @@ projLink.addEventListener('click', function (event) {
     });
 });
 
-
+//Dynamically changing year
 var currentYear = new Date().getFullYear();
 
 document.getElementById('currYear').innerText = 'Ⓒ ' + currentYear;
 
 
-
+//header background animation
 document.addEventListener("DOMContentLoaded", function () {
     var headerNav = document.querySelector(".headerNav");
 
@@ -169,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //PROJECT 1
 //view repo button project 1
 
-function project1Redirect(){
+function project1Redirect() {
 
     let repoUrl = "https://github.com/Jamal-Karim/Personal-Portfolio1";
 
@@ -179,7 +182,7 @@ function project1Redirect(){
 //PROJECT 2
 //view repo button project 2
 
-function project2Redirect(){
+function project2Redirect() {
 
     let repoUrl = "https://github.com/Jamal-Karim/Data_Science_ProjectFA23";
 
@@ -189,7 +192,7 @@ function project2Redirect(){
 //PROJECT 3
 //view repo button project 3
 
-function project3Redirect(){
+function project3Redirect() {
 
     let repoUrl = "https://github.com/Jamal-Karim/Restaurant_Page";
 
@@ -197,7 +200,7 @@ function project3Redirect(){
 }
 //view live button project 3
 
-function project3RedirectLive(){
+function project3RedirectLive() {
 
     let liveUrl = "https://jamal-karim.github.io/Restaurant_Page/";
 
@@ -207,7 +210,7 @@ function project3RedirectLive(){
 //PROJECT 4
 //view repo button project 4
 
-function project4Redirect(){
+function project4Redirect() {
 
     let repoUrl = "https://github.com/Jamal-Karim/Ableton-Cloned-Website";
 
@@ -215,7 +218,7 @@ function project4Redirect(){
 }
 //view live button project 4
 
-function project4RedirectLive(){
+function project4RedirectLive() {
 
     let liveUrl = "https://jamal-karim.github.io/Ableton-Cloned-Website/";
 
@@ -223,7 +226,7 @@ function project4RedirectLive(){
 }
 
 //About link
-function balloonbros(){
+function balloonbros() {
 
     let liveUrl = "https://www.instagram.com/balloonbros2/";
 
@@ -231,7 +234,7 @@ function balloonbros(){
 }
 
 //Github link
-function githubRedirect(event){
+function githubRedirect(event) {
 
     let liveUrl = "https://github.com/Jamal-Karim";
 
@@ -240,7 +243,7 @@ function githubRedirect(event){
 }
 
 //Linkedin link
-function linkedinRedirect(event){
+function linkedinRedirect(event) {
 
     let liveUrl = "https://www.linkedin.com/in/jamal-karim-a98528265/";
 
