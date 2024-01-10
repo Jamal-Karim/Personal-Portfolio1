@@ -592,8 +592,9 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease;
 }
+
 .headerNav.scrolled {
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .headerNav a {
@@ -671,4 +672,636 @@ nav a:hover::after {
 
 .socials a:hover::after {
   width: 100%;
+}
+
+/* Responsiveness */
+
+/* Laptop */
+@media (max-width : 1024px) {
+  .name {
+    font-size: 180px;
+  }
+
+  .job {
+    font-size: 45px;
+  }
+
+  .rectangle {
+    width: 600px;
+  }
+
+  .logo a,
+  nav a {
+    font-size: 20px;
+  }
+
+  nav a {
+    margin-right: 1rem
+  }
+
+  .rectangle2 {
+    width: 1125px;
+  }
+
+  .projectName {
+    font-size: 35px;
+  }
+
+  .projectText {
+    font-size: 25px;
+  }
+
+  .projectBtn {
+    font-size: 20px;
+    color: var(--primaryBlack);
+    width: 100px;
+    height: 50px;
+  }
+
+  .btnContainer {
+    display: flex;
+  }
+
+  .aboutText {
+    font-size: 25px;
+    margin-top: 7.2rem;
+    line-height: 1.9;
+    margin-right: -4.5rem;
+  }
+
+  .rectangle3 {
+    width: 1125px;
+  }
+
+  .pink2 {
+    width: 471px;
+    height: 525px;
+    left: 695px;
+    top: 500px;
+  }
+
+  .pic5 {
+    width: 448px;
+    height: 520px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .rectangle4 {
+    width: 1125px;
+  }
+
+  .cta {
+    font-size: 75px;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .email {
+    font-size: 75px;
+  }
+
+  .finalName p {
+    font-size: 25px;
+  }
+
+  .socials a {
+    padding: 0 3px;
+    font-size: 25px;
+  }
+
+  .socials a:hover::after {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width : 768px) {
+
+  .background1,
+  .background2,
+  .background3 {
+    right: -90%;
+  }
+
+  .name {
+    font-size: 130px;
+  }
+
+  .job {
+    font-size: 40px;
+  }
+
+  .rectangle {
+    width: 525px;
+  }
+
+  .logo a,
+  nav a {
+    font-size: 30px;
+  }
+
+  nav a {
+    margin-right: 1.3rem
+  }
+
+  .rectangle2 {
+    width: 1225px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 70vw 30vw;
+  }
+
+
+  .projectName {
+    font-size: 45px;
+  }
+
+  .projectText {
+    font-size: 25px;
+  }
+
+  .projectBtn {
+    font-size: 30px;
+    color: var(--primaryBlack);
+    width: 150px;
+    height: 60px;
+  }
+
+  .btnContainer {
+    display: flex;
+  }
+
+  .aboutText {
+    font-size: 30px;
+    margin-top: 6.2rem;
+    line-height: 1.9;
+    margin-right: -24.5rem;
+  }
+
+  .rectangle3 {
+    width: 1225px;
+  }
+
+  .pink2 {
+    width: 571px;
+    height: 625px;
+    left: 695px;
+    top: 500px;
+  }
+
+  .pic5 {
+    width: 548px;
+    height: 620px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .rectangle4 {
+    width: 1225px;
+  }
+
+  .contactContainer {
+    margin-right: -8rem;
+  }
+
+  .cta {
+    font-size: 70px;
+    margin-right: -25rem;
+    margin-bottom: 3rem;
+  }
+
+  .email {
+    font-size: 75px;
+  }
+
+  .finalName p {
+    font-size: 35px;
+  }
+
+  .socials {
+    margin-right: -35rem;
+  }
+
+  .socials a {
+    padding: 0 3px;
+    font-size: 35px;
+  }
+
+  .socials a:hover::after {
+    width: 100%;
+  }
+}
+
+/* Mobile L */
+@media (max-width : 425px) {
+
+  /* .background1,
+  .background2,
+  .background3 {
+    left: 60%;
+    right: -60%;
+  } */
+
+  .nameContainer {
+    margin-right: -25rem;
+  }
+
+  .name {
+    font-size: 150px;
+    width: 120vw;
+  }
+
+  .job {
+    font-size: 25px;
+  }
+
+  .rectangle {
+    width: 325px;
+  }
+
+  .logo a,
+  nav a {
+    font-size: 30px;
+  }
+
+  nav a {
+    margin-right: 1.3rem
+  }
+
+  .rectangle2 {
+    width: 1225px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .projectName {
+    font-size: 45px;
+  }
+
+  .projectText {
+    font-size: 25px;
+  }
+
+  .projectBtn {
+    font-size: 30px;
+    color: var(--primaryBlack);
+    width: 150px;
+    height: 60px;
+  }
+
+  .btnContainer {
+    display: flex;
+  }
+
+  .aboutText {
+    font-size: 45px;
+    margin-top: 2.2rem;
+    line-height: 1.9;
+    margin-right: -43.5rem;
+    margin-left: 17rem;
+  }
+
+  .picContainer5 {
+    margin-left: 15rem;
+    margin-bottom: 5rem;
+  }
+
+  .aboutinfo {
+    flex-direction: column-reverse;
+  }
+
+  .projectsContainer {
+    margin-bottom: 10rem;
+  }
+
+  .rectangle3 {
+    width: 1225px;
+    margin-bottom: 14rem;
+  }
+
+  .pink2 {
+    width: 771px;
+    height: 825px;
+    left: 695px;
+    top: 500px;
+  }
+
+  .pic5 {
+    width: 748px;
+    height: 820px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .rectangle4 {
+    width: 1225px;
+    margin-top: 5rem;
+    margin-bottom: 16rem;
+  }
+
+  .contactContainer {
+    margin-right: -8rem;
+  }
+
+  .cta {
+    font-size: 70px;
+    line-height: 2;
+    margin-right: -50rem;
+    margin-bottom: 10rem;
+  }
+
+  .email {
+    font-size: 75px;
+  }
+
+  .finalName p {
+    font-size: 35px;
+  }
+
+  .socials {
+    margin-right: -56rem;
+    margin-bottom: 5rem;
+  }
+
+  .socials a {
+    padding: 0 3px;
+    font-size: 35px;
+  }
+
+  .socials a:hover::after {
+    width: 100%;
+  }
+
+}
+
+@media (max-width : 768px) {
+
+  .background1,
+  .background2,
+  .background3 {
+    right: -90%;
+  }
+
+  .name {
+    font-size: 130px;
+  }
+
+  .job {
+    font-size: 40px;
+  }
+
+  .rectangle {
+    width: 525px;
+  }
+
+  .logo a,
+  nav a {
+    font-size: 30px;
+  }
+
+  nav a {
+    margin-right: 1.3rem
+  }
+
+  .rectangle2 {
+    width: 1225px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 70vw 30vw;
+  }
+
+
+  .projectName {
+    font-size: 45px;
+  }
+
+  .projectText {
+    font-size: 25px;
+  }
+
+  .projectBtn {
+    font-size: 30px;
+    color: var(--primaryBlack);
+    width: 150px;
+    height: 60px;
+  }
+
+  .btnContainer {
+    display: flex;
+  }
+
+  .aboutText {
+    font-size: 30px;
+    margin-top: 6.2rem;
+    line-height: 1.9;
+    margin-right: -24.5rem;
+  }
+
+  .rectangle3 {
+    width: 1225px;
+  }
+
+  .pink2 {
+    width: 571px;
+    height: 625px;
+    left: 695px;
+    top: 500px;
+  }
+
+  .pic5 {
+    width: 548px;
+    height: 620px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .rectangle4 {
+    width: 1225px;
+  }
+
+  .contactContainer {
+    margin-right: -8rem;
+  }
+
+  .cta {
+    font-size: 70px;
+    margin-right: -25rem;
+    margin-bottom: 3rem;
+  }
+
+  .email {
+    font-size: 75px;
+  }
+
+  .finalName p {
+    font-size: 35px;
+  }
+
+  .socials {
+    margin-right: -35rem;
+  }
+
+  .socials a {
+    padding: 0 3px;
+    font-size: 35px;
+  }
+
+  .socials a:hover::after {
+    width: 100%;
+  }
+}
+
+/* Large Desktop Screen */
+@media (min-width : 2560px) {
+
+  .background1,
+  .background2,
+  .background3 {
+    display: none;
+  }
+
+  .nameContainer {
+    margin-right: -25rem;
+  }
+
+  .name {
+    font-size: 400px;
+    width: 120vw;
+  }
+
+  .job {
+    font-size: 100px;
+  }
+
+  .rectangle {
+    width: 1225px;
+  }
+
+  .logo a,
+  nav a {
+    font-size: 50px;
+  }
+
+  nav a {
+    margin-right: 1.3rem
+  }
+
+  .rectangle2 {
+    width: 2525px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 70vw 30vw;
+  }
+
+
+  .projectName {
+    font-size: 105px;
+  }
+
+  .projectText {
+    font-size: 75px;
+  }
+
+  .projectBtn {
+    font-size: 50px;
+    color: var(--primaryBlack);
+    width: 270px;
+    height: 100px;
+  }
+
+  .btnContainer {
+    display: flex;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4,
+  .pink1 {
+    width: 1143px;
+    height: 805px;
+  }
+
+  .aboutText {
+    font-size: 45px;
+    margin-top: 3.2rem;
+    line-height: 2.9;
+    margin-right: -2.5rem;
+    margin-left: 10rem;
+  }
+
+  .picContainer5 {
+    margin-left: 15rem;
+    margin-bottom: 5rem;
+  }
+
+  .projectsContainer {
+    margin-bottom: 10rem;
+  }
+
+  .rectangle3 {
+    width: 2525px;
+    margin-bottom: 14rem;
+  }
+
+  .pink2 {
+    width: 1071px;
+    height: 1425px;
+    left: 695px;
+    top: 500px;
+  }
+
+  .pic5 {
+    width: 1048px;
+    height: 1420px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .rectangle4 {
+    width: 2525px;
+    margin-top: 5rem;
+    margin-bottom: 16rem;
+  }
+
+  .contactContainer {
+    margin-right: -8rem;
+  }
+
+  .cta {
+    font-size: 70px;
+    line-height: 2;
+    margin-right: -50rem;
+    margin-bottom: 10rem;
+  }
+
+  .email {
+    font-size: 75px;
+  }
+
+  .finalName p {
+    font-size: 35px;
+  }
+
+  .socials {
+    margin-right: -56rem;
+    margin-bottom: 5rem;
+  }
+
+  .socials a {
+    padding: 0 3px;
+    font-size: 35px;
+  }
+
+  .socials a:hover::after {
+    width: 100%;
+  }
+
 }
