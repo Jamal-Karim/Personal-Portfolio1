@@ -243,9 +243,9 @@ body {
   height: 505px;
   left: 668px;
   top: 591px;
-  background-image: url(images/DataScience.png);
+  background-image: url(images/todoList.png);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -265,7 +265,7 @@ body {
   height: 505px;
   left: 668px;
   top: 591px;
-  background-image: url(images/Ableton.png);
+  background-image: url(images/DataScience.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

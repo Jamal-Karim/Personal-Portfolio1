@@ -184,9 +184,15 @@ function project1Redirect() {
 
 function project2Redirect() {
 
-    let repoUrl = "https://github.com/Jamal-Karim/Data_Science_ProjectFA23";
+    let repoUrl = "https://github.com/Jamal-Karim/Todo_List";
 
     window.open(repoUrl, '_blank');
+}
+function project2RedirectLive() {
+
+    let liveUrl = "https://jamal-karim.github.io/Todo_List/";
+
+    window.open(liveUrl, '_blank');
 }
 
 //PROJECT 3
@@ -212,7 +218,7 @@ function project3RedirectLive() {
 
 function project4Redirect() {
 
-    let repoUrl = "https://github.com/Jamal-Karim/Ableton-Cloned-Website";
+    let repoUrl = "https://github.com/Jamal-Karim/Data_Science_ProjectFA23";
 
     window.open(repoUrl, '_blank');
 }
