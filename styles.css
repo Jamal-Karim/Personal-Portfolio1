@@ -47,9 +47,9 @@ h6 {
 
 /* Defining color variable */
 :root {
-  --primaryBlack: #2D2D2B;
-  --secondaryPink: #C39E9E;
-  --secondaryBeige: #F0E4D8;
+  --primaryBlack: #2d2d2b;
+  --secondaryPink: #c39e9e;
+  --secondaryBeige: #f0e4d8;
 }
 
 /*Styles for the header section*/
@@ -60,14 +60,14 @@ body {
 
 .name {
   margin-top: 8rem;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 200px;
   font-weight: 100;
   color: var(--secondaryBeige);
 }
 
 .job {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 50px;
   letter-spacing: 0.15em;
   color: var(--secondaryBeige);
@@ -157,7 +157,6 @@ body {
   z-index: -100;
   transform-origin: 532.5px 453.5px;
   animation: rotate 90s linear infinite;
-
 }
 
 .background3 {
@@ -173,7 +172,7 @@ body {
 /* Projects Section */
 
 .projectTitle {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 100px;
   font-weight: 100;
   color: var(--secondaryBeige);
@@ -185,19 +184,19 @@ body {
   height: 9px;
   left: 116px;
   top: 361px;
-  background: #F0E4D8;
+  background: #f0e4d8;
   margin-left: 6rem;
 }
 
 .projectName {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 50px;
   font-weight: 100;
   color: var(--secondaryPink);
 }
 
 .projectText {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 35px;
   color: var(--secondaryBeige);
 }
@@ -206,7 +205,7 @@ body {
   background-color: var(--secondaryPink);
   border-radius: 15px;
   border: none;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 30px;
   color: var(--primaryBlack);
   width: 150px;
@@ -219,11 +218,11 @@ body {
   height: 505px;
   left: 633px;
   top: 549px;
-  background: #C39E9E;
+  background: #c39e9e;
   border: 1px solid #000000;
 }
 
-.pic1 {
+.pic4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,8 +230,8 @@ body {
   height: 505px;
   left: 668px;
   top: 591px;
-  background: #F0E4D8;
-  font-family: 'Fjalla One', sans-serif;
+  background: #f0e4d8;
+  font-family: "Fjalla One", sans-serif;
   font-size: 150px;
   color: var(--primaryBlack);
   text-align: center;
@@ -254,20 +253,20 @@ body {
   height: 505px;
   left: 668px;
   top: 591px;
-  background-image: url(images/pancakeHouse.png);
+  background-image: url(images/DataScience.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.pic4 {
+.pic1 {
   width: 743px;
   height: 505px;
   left: 668px;
   top: 591px;
-  background-image: url(images/DataScience.png);
+  background-image: url(images/weatherApp.png);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
 }
 
@@ -422,7 +421,7 @@ body {
   height: 725px;
   left: 695px;
   top: 500px;
-  background: #C39E9E;
+  background: #c39e9e;
 }
 
 .pic5 {
@@ -441,12 +440,12 @@ body {
   height: 9px;
   left: 116px;
   top: 361px;
-  background: #F0E4D8;
+  background: #f0e4d8;
   margin-left: 6rem;
 }
 
 .aboutTitle {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 100px;
   font-weight: 100;
   color: var(--secondaryBeige);
@@ -454,7 +453,7 @@ body {
 }
 
 .aboutText {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 35px;
   color: var(--secondaryBeige);
   margin-top: 7.2rem;
@@ -496,14 +495,14 @@ body {
   height: 9px;
   left: 116px;
   top: 1511px;
-  background: #F0E4D8;
+  background: #f0e4d8;
   margin-left: 6rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 .cta {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 100px;
   color: var(--secondaryBeige);
   font-weight: 100;
@@ -513,7 +512,7 @@ body {
 }
 
 .email {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 100px;
   font-weight: 100;
   color: var(--secondaryPink);
@@ -524,7 +523,7 @@ body {
 }
 
 .finalName p {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 35px;
   color: var(--secondaryBeige);
 }
@@ -540,7 +539,6 @@ footer {
   display: flex;
   margin-bottom: 4rem;
 }
-
 
 /* Animations */
 
@@ -602,7 +600,7 @@ footer {
 }
 
 .logo a {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   margin-left: 2rem;
   font-size: 25px;
   color: var(--secondaryBeige);
@@ -653,7 +651,7 @@ nav a:hover::after {
 .socials a {
   position: relative;
   padding: 0 10px;
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 35px;
   color: var(--secondaryBeige);
   text-decoration: none;
@@ -677,7 +675,7 @@ nav a:hover::after {
 /* Responsiveness */
 
 /* Laptop */
-@media (max-width : 1024px) {
+@media (max-width: 1024px) {
   .name {
     font-size: 180px;
   }
@@ -696,7 +694,7 @@ nav a:hover::after {
   }
 
   nav a {
-    margin-right: 1rem
+    margin-right: 1rem;
   }
 
   .rectangle2 {
@@ -776,8 +774,7 @@ nav a:hover::after {
 }
 
 /* Tablet */
-@media (max-width : 768px) {
-
+@media (max-width: 768px) {
   .background1,
   .background2,
   .background3 {
@@ -802,7 +799,7 @@ nav a:hover::after {
   }
 
   nav a {
-    margin-right: 1.3rem
+    margin-right: 1.3rem;
   }
 
   .rectangle2 {
@@ -812,7 +809,6 @@ nav a:hover::after {
   .projectGrid {
     grid-template-columns: 70vw 30vw;
   }
-
 
   .projectName {
     font-size: 45px;
@@ -895,8 +891,7 @@ nav a:hover::after {
 }
 
 /* Mobile L */
-@media (max-width : 425px) {
-
+@media (max-width: 425px) {
   /* .background1,
   .background2,
   .background3 {
@@ -927,7 +922,7 @@ nav a:hover::after {
   }
 
   nav a {
-    margin-right: 1.3rem
+    margin-right: 1.3rem;
   }
 
   .rectangle2 {
@@ -937,7 +932,6 @@ nav a:hover::after {
   .projectGrid {
     grid-template-columns: 1fr;
   }
-
 
   .projectName {
     font-size: 45px;
@@ -1036,11 +1030,9 @@ nav a:hover::after {
   .socials a:hover::after {
     width: 100%;
   }
-
 }
 
-@media (max-width : 768px) {
-
+@media (max-width: 768px) {
   .background1,
   .background2,
   .background3 {
@@ -1065,7 +1057,7 @@ nav a:hover::after {
   }
 
   nav a {
-    margin-right: 1.3rem
+    margin-right: 1.3rem;
   }
 
   .rectangle2 {
@@ -1075,7 +1067,6 @@ nav a:hover::after {
   .projectGrid {
     grid-template-columns: 70vw 30vw;
   }
-
 
   .projectName {
     font-size: 45px;
@@ -1158,8 +1149,7 @@ nav a:hover::after {
 }
 
 /* Large Desktop Screen */
-@media (min-width : 2560px) {
-
+@media (min-width: 2560px) {
   .background1,
   .background2,
   .background3 {
@@ -1189,7 +1179,7 @@ nav a:hover::after {
   }
 
   nav a {
-    margin-right: 1.3rem
+    margin-right: 1.3rem;
   }
 
   .rectangle2 {
@@ -1199,7 +1189,6 @@ nav a:hover::after {
   .projectGrid {
     grid-template-columns: 70vw 30vw;
   }
-
 
   .projectName {
     font-size: 105px;
@@ -1303,5 +1292,4 @@ nav a:hover::after {
   .socials a:hover::after {
     width: 100%;
   }
-
 }

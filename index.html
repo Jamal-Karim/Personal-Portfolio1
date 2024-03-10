@@ -1,175 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jamal Karim</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="headerNav">
-            <div class="logo active"><a href="#home">JK</a></div>
+      <div class="headerNav">
+        <div class="logo active"><a href="#home">JK</a></div>
 
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+        <nav>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <div class="background1">
-        <svg width="1018" height="700" viewBox="0 0 1018 823" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M837 4H4L46.5 473.5L654 818L1013.5 444L837 4Z" stroke="#C39E9E" stroke-width="7" />
-        </svg>
+      <svg
+        width="1018"
+        height="700"
+        viewBox="0 0 1018 823"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M837 4H4L46.5 473.5L654 818L1013.5 444L837 4Z"
+          stroke="#C39E9E"
+          stroke-width="7"
+        />
+      </svg>
     </div>
 
     <div class="background2">
-        <svg width="1065" height="907" viewBox="0 0 1065 907" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M406 5L5 530.5L342.5 902.5L1058 530.5L406 5Z" stroke="#C39E9E" stroke-width="7" />
-        </svg>
+      <svg
+        width="1065"
+        height="907"
+        viewBox="0 0 1065 907"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M406 5L5 530.5L342.5 902.5L1058 530.5L406 5Z"
+          stroke="#C39E9E"
+          stroke-width="7"
+        />
+      </svg>
     </div>
 
     <div class="background3">
-        <svg width="1310" height="662" viewBox="0 0 1310 662" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1254.5 4L9 166.5L597.5 658L1306 472.5L1254.5 4Z" stroke="#C39E9E" stroke-width="7" />
-        </svg>
+      <svg
+        width="1310"
+        height="662"
+        viewBox="0 0 1310 662"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1254.5 4L9 166.5L597.5 658L1306 472.5L1254.5 4Z"
+          stroke="#C39E9E"
+          stroke-width="7"
+        />
+      </svg>
     </div>
 
     <main>
-        <div class="nameContainer section" id="home">
-            <h1 class="name" data-splitting>Jamal Karim.</h1>
-            <h2 class="job" data-splitting>Full Stack Developer</h2>
-            <div class="rectangle"></div>
-        </div>
+      <div class="nameContainer section" id="home">
+        <h1 class="name" data-splitting>Jamal Karim.</h1>
+        <h2 class="job" data-splitting>Full Stack Developer</h2>
+        <div class="rectangle"></div>
+      </div>
 
-        <!-- Project section -->
+      <!-- Project section -->
 
-        <div class="projectsContainer anim_item section" id="projects">
-            <h1 class="projectTitle" data-splitting>Projects</h1>
-            <div class="rectangle2"></div>
+      <div class="projectsContainer anim_item section" id="projects">
+        <h1 class="projectTitle" data-splitting>Projects</h1>
+        <div class="rectangle2"></div>
 
-            <!-- grid starts here -->
-            <div class="projectGrid">
-                <div class="projContainer1">
-                    <h2 class="projectName">Personal Portfolio Webpage</h2>
-                    <p class="projectText">Designed with Figma, a fully-responsive website built from scratch using
-                        HTML,
-                        CSS, Javascript, and GSAP.</p>
-                    <button class="projectBtn" onclick="project1Redirect()"><span>VIEW REPO</span></button>
-                </div>
-                <div class="picContainer1 anim_img">
-                    <div class="pink1"></div>
-                    <div class="pic1 Img">You're <br>on it!</div>
-                </div>
-
-                <div class="projContainer2">
-                    <h2 class="projectName">Todo App</h2>
-                    <p class="projectText">Javascript todo website styled with HTML/CSS, using webpack for bundling
-                        and ES6 modules.
-                    </p>
-                    <button class="projectBtn" onclick="project2Redirect()"><span>VIEW REPO</span></button>
-                    <button class="projectBtn" onclick="project2RedirectLive()"><span>VIEW LIVE</span></button>
-                </div>
-                <div class="picContainer2 anim_img">
-                    <div class="pink1"></div>
-                    <div class="pic2 Img"></div>
-                </div>
-
-                <div class="projContainer3">
-                    <h2 class="projectName">Restaurant Page</h2>
-                    <p class="projectText">Using Javascript for dynamic DOM manipulation, multiple JS files for
-                        switching between tabs,
-                        and practice using webpack and ES6 modules.
-                    </p>
-                    <div class="btnContainer">
-                        <button class="projectBtn" onclick="project3Redirect()"><span>VIEW REPO</span></button>
-                        <button class="projectBtn" onclick="project3RedirectLive()"><span>VIEW LIVE</span></button>
-                    </div>
-                </div>
-
-                <div class="picContainer3 anim_img">
-                    <div class="pink1"></div>
-                    <div class="pic3 Img"></div>
-                </div>
-
-                <div class="projContainer4">
-                    <h2 class="projectName">Data Science Project</h2>
-                    <p class="projectText">Data driven analysis on home field advantage in the NFL using Python, pandas,
-                        numpy, seaborn, and matplotlib.</p>
-                    <div class="btnContainer">
-                        <button class="projectBtn" onclick="project4Redirect()"><span>VIEW REPO</span></button>
-                        <!-- <button class="projectBtn" onclick="project4RedirectLive()"><span>VIEW LIVE</span></button> -->
-                    </div>
-                </div>
-                <div class="picContainer4 anim_img">
-                    <div class="pink1"></div>
-                    <div class="pic4 Img"></div>
-                </div>
+        <!-- grid starts here -->
+        <div class="projectGrid">
+          <div class="projContainer1">
+            <h2 class="projectName">Weather App</h2>
+            <p class="projectText">
+              Fetches data from a weather api to make a functional weather app.
+              Used webpack for module bundling and optimization.
+            </p>
+            <div class="btnContainer">
+              <button class="projectBtn" onclick="project1Redirect()">
+                <span>VIEW REPO</span>
+              </button>
+              <button class="projectBtn" onclick="project1RedirectLive()">
+                <span>VIEW LIVE</span>
+              </button>
             </div>
-        </div>
+          </div>
+          <div class="picContainer1 anim_img">
+            <div class="pink1"></div>
+            <div class="pic1 Img"></div>
+          </div>
 
-        <!-- About Section -->
-        <div class="aboutContainer anim_item section" id="about">
-            <h1 class="aboutTitle" data-splitting>About</h1>
-            <div class="rectangle3"></div>
+          <div class="projContainer2">
+            <h2 class="projectName">Todo App</h2>
+            <p class="projectText">
+              Javascript todo website styled with HTML/CSS, using webpack for
+              bundling and ES6 modules.
+            </p>
+            <button class="projectBtn" onclick="project2Redirect()">
+              <span>VIEW REPO</span>
+            </button>
+            <button class="projectBtn" onclick="project2RedirectLive()">
+              <span>VIEW LIVE</span>
+            </button>
+          </div>
+          <div class="picContainer2 anim_img">
+            <div class="pink1"></div>
+            <div class="pic2 Img"></div>
+          </div>
 
-            <div class="aboutinfo">
-                <p class="aboutText">Hey I'm Jamal! I'm an aspiring full stack developer based in San Diego
-                    in my senior year at UCSD. A premed student turned programmer, I was so lucky to have found
-                    a passion for this field. When I'm not having fun with this hobby, I love to play football
-                    and basketball. A little fun fact is I also dabble in balloon animals (Check it out <a href="#"
-                        onclick="balloonbros()">here!</a>).</p>
-                <div class="picContainer5 anim_img">
-                    <div class="pink2"></div>
-                    <div class="pic5 Img"></div>
-                </div>
+          <div class="projContainer3">
+            <h2 class="projectName">Data Science Project</h2>
+            <p class="projectText">
+              Data driven analysis on home field advantage in the NFL using
+              Python, pandas, numpy, seaborn, and matplotlib.
+            </p>
+            <div class="btnContainer">
+              <button class="projectBtn" onclick="project3Redirect()">
+                <span>VIEW REPO</span>
+              </button>
+              <!-- <button class="projectBtn" onclick="project3RedirectLive()">
+                <span>VIEW LIVE</span>
+              </button> -->
             </div>
-        </div>
+          </div>
 
-        <!-- Contact Section -->
-        <div class="contactContainer anim_item section" id="contact">
-            <div class="rectangle4"></div>
-            <h1 class="cta" data-splitting>Currently looking for opportunities. Contact me at <span
-                    class="email">1jamalkarim@gmail.com</span></h1>
-        </div>
+          <div class="picContainer3 anim_img">
+            <div class="pink1"></div>
+            <div class="pic3 Img"></div>
+          </div>
 
+          <div class="projContainer4">
+            <h2 class="projectName">Personal Portfolio Webpage</h2>
+            <p class="projectText">
+              Designed with Figma, a website built from scratch using HTML, CSS,
+              Javascript, and GSAP.
+            </p>
+            <div class="btnContainer">
+              <button class="projectBtn" onclick="project4Redirect()">
+                <span>VIEW REPO</span>
+              </button>
+              <!-- <button class="projectBtn" onclick="project4RedirectLive()"><span>VIEW LIVE</span></button> -->
+            </div>
+          </div>
+          <div class="picContainer4 anim_img">
+            <div class="pink1"></div>
+            <div class="pic4 Img">You're <br />on it!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="aboutContainer anim_item section" id="about">
+        <h1 class="aboutTitle" data-splitting>About</h1>
+        <div class="rectangle3"></div>
+
+        <div class="aboutinfo">
+          <p class="aboutText">
+            Hey I'm Jamal! I'm an aspiring full stack developer based in San
+            Diego in my senior year at UCSD. A premed student turned programmer,
+            I was so lucky to have found a passion for this field. When I'm not
+            having fun with this hobby, I love to play football and basketball.
+            A little fun fact is I also dabble in balloon animals (Check it out
+            <a href="#" onclick="balloonbros()">here!</a>).
+          </p>
+          <div class="picContainer5 anim_img">
+            <div class="pink2"></div>
+            <div class="pic5 Img"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contactContainer anim_item section" id="contact">
+        <div class="rectangle4"></div>
+        <h1 class="cta" data-splitting>
+          Currently looking for opportunities. Contact me at
+          <span class="email">1jamalkarim@gmail.com</span>
+        </h1>
+      </div>
     </main>
 
     <footer>
-        <div class="finalName">
-            <p>Jamal Karim</p>
-            <p>San Diego, California</p>
-            <p id="currYear">Ⓒ 2023</p>
-        </div>
+      <div class="finalName">
+        <p>Jamal Karim</p>
+        <p>San Diego, California</p>
+        <p id="currYear">Ⓒ 2023</p>
+      </div>
 
-        <div class="socials">
-            <a href="Misc/Jamal Karim v2.pdf" target="_blank">Resume</a>
-            <a href="#" onclick="return linkedinRedirect()">LinkedIn</a>
-            <a href="#" onclick="return githubRedirect()">Github</a>
-        </div>
+      <div class="socials">
+        <a href="Misc/Jamal Karim v3.pdf" target="_blank">Resume</a>
+        <a href="#" onclick="return linkedinRedirect()">LinkedIn</a>
+        <a href="#" onclick="return githubRedirect()">Github</a>
+      </div>
     </footer>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
